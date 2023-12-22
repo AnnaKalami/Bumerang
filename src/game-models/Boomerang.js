@@ -2,25 +2,33 @@
 // В дальнейшем можно добавить другое оружие.
 // Тогда можно будет создать класс Weapon и воспользоваться наследованием!
 
+//const Game = require('../Game')
+const regenerateTrack = require('../Game')
+
 class Boomerang {
   constructor() {
     this.skin = '🌀';
-    this.position = 0;
+    this.position = 1;
+    
   }
+  
 
   fly() {
     this.moveRight();
     this.moveLeft();
+    
   }
 
   moveLeft() {
     // Идём влево.
     this.position -= 1;
+    
   }
 
   moveRight() {
     // Идём вправо.
     this.position += 1;
+   
   }
 }
 

@@ -2,7 +2,7 @@
 
 class View {
   render(track) {
-    const yourTeamName = 'Elbrus';
+    const yourTeamName = process.argv[2];
 
     // Тут всё рисуем.
     console.clear();
